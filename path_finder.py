@@ -373,7 +373,7 @@ class Simulation:
             self.iterations = 0
         
         if p < epsilon:
-            self.mode = 'random'
+            self.mode = 'exploration'
             #action = np.random.choice(self.moves)
             
             options = [k for k in self.moves if moves[k] in self.path]
